@@ -1,22 +1,6 @@
 import streamlit as st
-with open('./styles.css') as f:
-    css = f.read()
 
-st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
-
-html_string = '''
-<script>
-document.addEventListener("DOMContentLoaded", function (event) {
-    const streamlitDoc = window.parent.document;
-    console.log("DOM LOADED", streamlitDoc)
-    streamlitDoc.querySelectorAll('[class^="profileContainer"]')
-});
-</script>
-'''
-st.markdown(html_string, unsafe_allow_html=True)
 # Función para añadir un párrafo recibiendo un texto como parametro
-
-
 def parrafo(text):
     st.markdown(text)
 
