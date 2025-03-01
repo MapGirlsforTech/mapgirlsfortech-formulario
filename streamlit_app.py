@@ -1,27 +1,10 @@
 import streamlit as st
-
-st.markdown("""
-    <style>
-        [data-testid="stToolbarActions"] {
-            display: none !important;
-        }
-        [data-testid="appCreatorAvatar"] {
-            display: none !important;
-            visible: hidden !important;
-        }
-    </style>
-    """,
-            unsafe_allow_html=True
-            )
 html_string = '''
-<script>
-// To break out of iframe and access the parent window
-const streamlitDoc = window.parent.document;
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script src="script.js">
 
-// Make the replacement
-document.addEventListener("DOMContentLoaded", function(event){
-        streamlitDoc.getElementsByTagName("footer")[0].innerHTML = "Provided by <a href='https://yourwebsite.com' target='_blank' class='css-z3au9t egzxvld2'>Your Link Display Text Here</a>";
-    });
 </script>
 '''
 st.markdown(html_string, unsafe_allow_html=True)
