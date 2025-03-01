@@ -2,7 +2,7 @@ import streamlit as st
 
 st.markdown("""
     <style>
-        [data-testid="appCreatorAvatar"], [data-testid="stToolbarActions"] {
+        ._profileContainer_gzau3_53, [data-testid="stToolbarActions"] {
             display: none;
         }
     </style>
