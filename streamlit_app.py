@@ -3,10 +3,11 @@ import streamlit as st
 st.markdown("""
     <style>
         [data-testid="stToolbarActions"] {
-            display: none;
+            display: none !important;
         }
         [data-testid="appCreatorAvatar"] {
-            display: none;
+            display: none !important;
+            visible: hidden !important;
         }
     </style>
     """,
