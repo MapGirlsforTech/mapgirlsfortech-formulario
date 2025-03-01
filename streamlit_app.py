@@ -2,13 +2,15 @@ import streamlit as st
 
 st.markdown("""
     <style>
-        ._profileContainer_gzau3_53, [data-testid="stToolbarActions"] {
+        [data-testid="stToolbarActions"] {
             display: none;
         }
+        [data-testid="stToolbar"] {visibility: hidden !important;}
+        footer {visibility: hidden !important;}
     </style>
     """,
-    unsafe_allow_html=True
-)
+            unsafe_allow_html=True
+            )
 
 # Función para añadir un párrafo recibiendo un texto como parametro
 
