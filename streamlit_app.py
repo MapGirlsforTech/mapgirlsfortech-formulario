@@ -1,10 +1,10 @@
 import streamlit as st
-html_string = '''
-<head>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<script src="script.js">
+with open('./styles.css') as f:
+    css = f.read()
 
+st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+html_string = '''
+<script src="./script.js">
 </script>
 '''
 st.markdown(html_string, unsafe_allow_html=True)
