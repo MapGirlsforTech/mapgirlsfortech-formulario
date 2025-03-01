@@ -13,7 +13,18 @@ st.markdown("""
     """,
             unsafe_allow_html=True
             )
+html_string = '''
+<script>
+// To break out of iframe and access the parent window
+const streamlitDoc = window.parent.document;
 
+// Make the replacement
+document.addEventListener("DOMContentLoaded", function(event){
+        streamlitDoc.getElementsByTagName("footer")[0].innerHTML = "Provided by <a href='https://yourwebsite.com' target='_blank' class='css-z3au9t egzxvld2'>Your Link Display Text Here</a>";
+    });
+</script>
+'''
+st.markdown(html_string, unsafe_allow_html=True)
 # Función para añadir un párrafo recibiendo un texto como parametro
 
 
