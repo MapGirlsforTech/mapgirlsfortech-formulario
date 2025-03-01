@@ -1,10 +1,24 @@
 import streamlit as st
 
+st.markdown("""
+    <style>
+        [data-testid="appCreatorAvatar"], [data-testid="stToolbarActions"] {
+            display: none;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Función para añadir un párrafo recibiendo un texto como parametro
+
+
 def parrafo(text):
     st.markdown(text)
 
 # Función para añadir un enlace
+
+
 def enlace(enlace, titulo):
     st.page_link(enlace, label=titulo)
 
@@ -12,12 +26,13 @@ def enlace(enlace, titulo):
 
 # st.markdown("<h2 style='text-align: center;'>MAP Girls for Tech</h2>", unsafe_allow_html=True)
 
+
 st.markdown(
     """
     <h2 style="text-align: center; color: #4CAF50;">
         MAP Girls for TECH
     </h2>
-    """, 
+    """,
     unsafe_allow_html=True
 )
 
@@ -48,7 +63,7 @@ st.markdown(
         </button>
     </a>
     </div>
-    """, 
+    """,
     unsafe_allow_html=True
 )
 
@@ -78,13 +93,16 @@ parrafo("Hemos creado un cuestionario con una serie de preguntas que nos ayudar�
 
 # parrafo("#### **¡¡¡NECESITAMOS VUESTRA AYUDA!!!**")
 
-st.markdown("<h4 style='text-align: center;'>¡¡¡NECESITAMOS VUESTRA AYUDA!!!</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center;'>¡¡¡NECESITAMOS VUESTRA AYUDA!!!</h4>",
+            unsafe_allow_html=True)
 
 # parrafo("¿Podrías contestar nuestro cuestionario?")
 
-st.markdown("<h5 style='text-align: center;'>¿Podrías contestar nuestro cuestionario?</h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center;'>¿Podrías contestar nuestro cuestionario?</h5>",
+            unsafe_allow_html=True)
 
-st.markdown("<h5 style='text-align: center;'>Muchas Gracias</h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center;'>Muchas Gracias</h5>",
+            unsafe_allow_html=True)
 
 # enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
@@ -98,14 +116,15 @@ st.markdown(
             </button>
         </a>
     </div>
-    """, 
+    """,
     unsafe_allow_html=True
 )
 
 # parrafo("__Muchas Gracias.__")
 
 # Crear una columna para centrar la imagen
-col1, col2, col3 = st.columns([1, 3, 1])  # Tres columnas, el centro tiene el triple de peso
+# Tres columnas, el centro tiene el triple de peso
+col1, col2, col3 = st.columns([1, 3, 1])
 # Usar la columna central para colocar la imagen
 with col2:
     st.image("./images/Logo-Circular-WEB_OK.png", use_container_width=True)
