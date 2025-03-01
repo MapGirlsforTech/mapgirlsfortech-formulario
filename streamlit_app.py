@@ -3,11 +3,10 @@ with open('./styles.css') as f:
     css = f.read()
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
-html_string = '''
-<script src="./script.js">
-</script>
-'''
-st.markdown(html_string, unsafe_allow_html=True)
+
+with open('./scripts.js') as f:
+    scripts = f.read()
+st.markdown(f'<script>{scripts}</script>', unsafe_allow_html=True)
 # Función para añadir un párrafo recibiendo un texto como parametro
 
 
