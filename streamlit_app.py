@@ -5,8 +5,9 @@ st.markdown("""
         [data-testid="stToolbarActions"] {
             display: none;
         }
-        [data-testid="stToolbar"] {visibility: hidden !important;}
-        footer {visibility: hidden !important;}
+        [data-testid="appCreatorAvatar"] {
+            display: none;
+        }
     </style>
     """,
             unsafe_allow_html=True
