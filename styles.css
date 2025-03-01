@@ -1,3 +1,6 @@
+body {
+    background: red !important;
+}
 [data-testid="stToolbarActions"] {
     display: none !important;
 }
