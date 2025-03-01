@@ -89,7 +89,7 @@ st.markdown("<h5 style='text-align: center;'>Muchas Gracias</h5>", unsafe_allow_
 # enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
 st.markdown("""
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuypycS47WjnV2FEs60UGHM5rpseCMCs1CjCExo9lH9H1U7Q/viewform?embedded=true" width="640" height="4378" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuypycS47WjnV2FEs60UGHM5rpseCMCs1CjCExo9lH9H1U7Q/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 """, 
     unsafe_allow_html=True)
 
