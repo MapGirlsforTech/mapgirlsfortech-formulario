@@ -4,9 +4,16 @@ with open('./styles.css') as f:
 
 st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
-with open('./script.js') as f:
-    scripts = f.read()
-st.markdown(f'<script>{scripts}</script>', unsafe_allow_html=True)
+html_string = '''
+<script>
+document.addEventListener("DOMContentLoaded", function (event) {
+    const streamlitDoc = window.parent.document;
+    console.log("DOM LOADED", streamlitDoc)
+    streamlitDoc.querySelectorAll('[class^="profileContainer"]')
+});
+</script>
+'''
+st.markdown(html_string, unsafe_allow_html=True)
 # Función para añadir un párrafo recibiendo un texto como parametro
 
 
