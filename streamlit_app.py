@@ -88,15 +88,20 @@ st.markdown("<h5 style='text-align: center;'>Muchas Gracias</h5>", unsafe_allow_
 
 # enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
+st.markdown("""
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuypycS47WjnV2FEs60UGHM5rpseCMCs1CjCExo9lH9H1U7Q/viewform?embedded=true" width="640" height="4378" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+""", 
+    unsafe_allow_html=True)
+
 # Crear un enlace con apariencia de botón
 st.markdown(
     """
-    <div style="display: flex; justify-content: center;">
-    <a href="https://technovationchallenge.org/" target="_blank">
-        <button style="background-color: #4CAF50; color: white; padding: 5px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
-            Ir al Cuestionario
-        </button>
-    </a>
+    <div style="display: flex; justify-content: center; padding: 20px 0;">
+        <a href="https://forms.gle/ti3ky6UAXbHjB2a87" target="_blank">
+            <button style="background-color: #4CAF50; color: white; padding: 5px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
+                Ir al Cuestionario
+            </button>
+        </a>
     </div>
     """, 
     unsafe_allow_html=True
