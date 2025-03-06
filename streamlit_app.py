@@ -110,6 +110,8 @@ st.markdown(
 
 # parrafo("__Muchas Gracias.__")
 
+parrafo(" ")
+
 # Crear una columna para centrar la imagen
 # Tres columnas, el centro tiene el triple de peso
 col1, col2, col3 = st.columns([1, 3, 1])
