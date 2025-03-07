@@ -17,15 +17,16 @@ def enlace(enlace, titulo):
 # Ruta al archivo de imagen
 icon_path = "imagenes/email_icon.png"  # Cambia esta ruta por la de tu archivo
 
-# Crear el enlace con la imagen del ícono ajustando su tamaño
+# Crear el enlace con el ícono justificado a la derecha
 st.markdown(
     f"""
-    <a href="mailto:tucorreo@example.com" style="text-decoration: none;">
-        <img src="{icon_path}" alt="Correo Electrónico" style="width:50px; height:auto; vertical-align:middle;">
-    </a>
+    <div style="text-align: right;">
+        <a href="mailto:tucorreo@example.com" style="text-decoration: none;">
+            <img src="{icon_path}" alt="Correo Electrónico" style="width:50px; height:auto; vertical-align:middle;">
+        </a>
+    </div>
     """,
     unsafe_allow_html=True
-)
 
 st.markdown(
     """
