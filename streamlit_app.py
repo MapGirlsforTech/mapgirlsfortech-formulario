@@ -15,7 +15,7 @@ def enlace(enlace, titulo):
 # st.markdown("<h2 style='text-align: center;'>MAP Girls for Tech</h2>", unsafe_allow_html=True)
 
 # Ruta al archivo de imagen
-icon_path = "images/Correo_Verde.png"  # Cambia esta ruta por la de tu archivo
+icon_path = "/images/Correo_Verde.png"  # Cambia esta ruta por la de tu archivo
 
 # Crear el enlace con el ícono justificado a la derecha
 st.markdown(
