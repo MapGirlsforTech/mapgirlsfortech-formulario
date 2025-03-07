@@ -14,6 +14,18 @@ def enlace(enlace, titulo):
 
 # st.markdown("<h2 style='text-align: center;'>MAP Girls for Tech</h2>", unsafe_allow_html=True)
 
+# Ruta al archivo de imagen
+icon_path = "imagenes/email_icon.png"  # Cambia esta ruta por la de tu archivo
+
+# Crear el enlace con la imagen del ícono ajustando su tamaño
+st.markdown(
+    f"""
+    <a href="mailto:tucorreo@example.com" style="text-decoration: none;">
+        <img src="{icon_path}" alt="Correo Electrónico" style="width:50px; height:auto; vertical-align:middle;">
+    </a>
+    """,
+    unsafe_allow_html=True
+)
 
 st.markdown(
     """
