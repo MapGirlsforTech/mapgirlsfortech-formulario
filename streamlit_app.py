@@ -10,6 +10,20 @@ def parrafo(text):
 def enlace(enlace, titulo):
     st.page_link(enlace, label=titulo)
 
+# Crear un enlace con apariencia de botón para el Corrreo
+st.markdown(
+    """
+    <div style="display: flex; justify-content: right;">
+    <a href="mailto:mapgirlsfortech@gmail.com" target="_blank">
+        <button style="background-color: #4CAF50; color: white; padding: 5px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
+            Contactanos
+        </button>
+    </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 st.markdown(
     """
     <h2 style="text-align: center; color: #4CAF50;">
@@ -107,17 +121,3 @@ col1, col2, col3 = st.columns([1, 3, 1])
 # Usar la columna central para colocar la imagen
 with col2:
     st.image("./images/Logo-Circular-WEB_OK.png", use_container_width=True)
-
-# Crear un enlace con apariencia de botón para ir a Technovation
-st.markdown(
-    """
-    <div style="display: flex; justify-content: center;">
-    <a href="mailto:mapgirlsfortech@gmail.com" target="_blank">
-        <button style="background-color: #4CAF50; color: white; padding: 5px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
-            Contacta con Nosotras
-        </button>
-    </a>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
