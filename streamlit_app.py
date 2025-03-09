@@ -108,24 +108,16 @@ col1, col2, col3 = st.columns([1, 3, 1])
 with col2:
     st.image("./images/Logo-Circular-WEB_OK.png", use_container_width=True)
 
-# Crear un enlace con estilo de botón para el correo
-correo_enlace = '[Contacta con nosotras](mailto:mapgirlsfortech@gmail.com)'
-
-# Estilo básico en Markdown
-st.markdown(f"""
-    <style>
-        .enlace-boton {{
-            display: inline-block;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }}
-    </style>
-    <a href="mailto:mapgirlsfortech@gmail.com" class="enlace-boton">
-        {correo_enlace}
+# Crear un enlace con apariencia de botón para ir a Technovation
+st.markdown(
+    """
+    <div style="display: flex; justify-content: center;">
+    <a href="mailto:mapgirlsfortech@gmail.com" target="_blank">
+        <button style="background-color: #4CAF50; color: white; padding: 5px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
+            Contacta con Nosotras
+        </button>
     </a>
-""", unsafe_allow_html=True)
+    </div>
+    """,
+    unsafe_allow_html=True
+)
