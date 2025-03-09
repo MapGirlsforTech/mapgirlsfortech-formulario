@@ -107,26 +107,3 @@ col1, col2, col3 = st.columns([1, 3, 1])
 # Usar la columna central para colocar la imagen
 with col2:
     st.image("./images/Logo-Circular-WEB_OK.png", use_container_width=True)
-
-
-# Dirección de correo
-correo = "mapgirlsfortech@gmail.com"
-
-# URL de la imagen
-imagen_url = "./images/Correo_Verde.png"
-
-# Entrada del tamaño personalizado para la imagen
-ancho = st.number_input("Ancho de la imagen (px):", min_value=50, max_value=500, value=100)
-alto = st.number_input("Alto de la imagen (px):", min_value=50, max_value=500, value=100)
-
-# Código HTML para la alineación a la derecha y enlace mailto
-html = f"""
-<div style="text-align: right;">
-    <a href="mailto:{correo}" style="text-decoration: none;">
-        <img src="{imagen_url}" alt="Enviar correo" style="width:{ancho}px; height:{alto}px; cursor:pointer;">
-    </a>
-</div>
-"""
-
-# Mostrar el ícono con enlace
-st.markdown(html, unsafe_allow_html=True)
