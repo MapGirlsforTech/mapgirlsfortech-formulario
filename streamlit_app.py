@@ -10,10 +10,6 @@ def parrafo(text):
 def enlace(enlace, titulo):
     st.page_link(enlace, label=titulo)
 
-# st.header("MAP Girls for Tech")
-
-# st.markdown("<h2 style='text-align: center;'>MAP Girls for Tech</h2>", unsafe_allow_html=True)
-
 st.markdown(
     """
     <h2 style="text-align: center; color: #4CAF50;">
@@ -60,8 +56,6 @@ parrafo(" ")
 parrafo(" ")
 parrafo("Un problema que nos ha llamado la atención es que no hay calzado deportivo femenino para las jugadoras de fútbol. Es crucial utilizar un calzado adecuado al practicar deporte, ya que el uso de calzado deportivo no adecuado al pie femenino puede causar graves lesiones. Esto le ha pasado a nuestra compañera Pilar, así como dea otras muchas mujeres, que debido a la falta de calzado adaptado a su pie sufre lesiones, en ocasiones importantes, ya que se ven  obligadas a recurrir al calzado masculino. Este es el testimonio de Pilar:")
 
-# st.caption("“He jugado al fútbol desde los 5 años y me encantan los deportes, pero nunca he encontrado botas específicamente para chicas. He sufrido de varias lesiones en los tobillos, pero mi última lesión, ha sido la más grave de todas concretamente en la rodilla, he tenido que estar 4 meses en reposo total.”")
-
 # Centrar la cita, pero alineada a la izquierda
 st.markdown(
     """
@@ -80,12 +74,9 @@ parrafo("Ante esta problemática, la falta de calzado deportivo adecuado al pie 
 
 parrafo("Hemos creado un cuestionario con una serie de preguntas que nos ayudarán a darle forma  al proyecto y tratar de buscar una solución a este problema. ")
 
-# parrafo("#### **¡¡¡NECESITAMOS VUESTRA AYUDA!!!**")
-
 st.markdown("<h4 style='text-align: center;'>¡¡¡NECESITAMOS VUESTRA AYUDA!!!</h4>",
             unsafe_allow_html=True)
 
-# parrafo("¿Podrías contestar nuestro cuestionario?")
 
 st.markdown("<h5 style='text-align: center;'>¿Podrías contestar nuestro cuestionario?</h5>",
             unsafe_allow_html=True)
@@ -93,7 +84,6 @@ st.markdown("<h5 style='text-align: center;'>¿Podrías contestar nuestro cuesti
 st.markdown("<h5 style='text-align: center;'>Muchas Gracias</h5>",
             unsafe_allow_html=True)
 
-# enlace("https://technovationchallenge.org/", "Enlace al cuestionario")
 
 # Crear un enlace con apariencia de botón
 st.markdown(
@@ -109,8 +99,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# parrafo("__Muchas Gracias.__")
-
 parrafo(" ")
 
 # Crear una columna para centrar la imagen
@@ -119,5 +107,3 @@ col1, col2, col3 = st.columns([1, 3, 1])
 # Usar la columna central para colocar la imagen
 with col2:
     st.image("./images/Logo-Circular-WEB_OK.png", use_container_width=True)
-
-# st.image("./images/Logo-Circular-WEB_OK.png", width=400)
