@@ -14,28 +14,6 @@ def enlace(enlace, titulo):
 
 # st.markdown("<h2 style='text-align: center;'>MAP Girls for Tech</h2>", unsafe_allow_html=True)
 
-# Dirección de correo electrónico
-correo = "tucorreo@ejemplo.com"
-
-# Mostrar el icono como imagen
-st.image("./images/Correo_Verde.png", caption="Haz clic en el ícono para enviar un correo")
-
-# Usar st.markdown para crear un enlace clicable
-html = f"""
-<a href="mailto:{correo}" style="text-decoration: none;">
-    <button style="
-        background-color: #0078D4; 
-        color: white; 
-        padding: 10px 20px; 
-        border: none; 
-        border-radius: 5px; 
-        cursor: pointer; 
-        display: flex; 
-        align-items: center;">
-        
-        Texto sin restricciones
-</a>
-
 st.markdown(
     """
     <h2 style="text-align: center; color: #4CAF50;">
