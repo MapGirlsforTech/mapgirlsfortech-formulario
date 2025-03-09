@@ -16,7 +16,7 @@ st.markdown(
     <div style="display: flex; justify-content: right;">
     <a href="mailto:mapgirlsfortech@gmail.com" target="_blank">
         <button style="background-color: #4CAF50; color: white; padding: 5px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
-            Contactanos
+            Contáctanos
         </button>
     </a>
     </div>
