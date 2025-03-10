@@ -36,13 +36,13 @@ st.markdown(
 # Texto: Presentación del equipo
 
 st.markdown(
-    "Hola, somos **Maite**, **Ana** y **Pilar** y juntas formamos el equipo MAP Girls for Tech. Participamos por tercer año consecutivo en el proyecto Technovation Girls, cuyo objetivo es acercar la tecnología a las chicas y jóvenes de 8 a 18 años, la idea es aumentar con esta iniciativa la presencia de mujeres en las carreras STEM."
+    "Hola, somos **Maite**, **Ana** y **Pilar**, vivimos en Las Rozas de Madrid (España) y juntas formamos el equipo MAP Girls for Tech. Participamos por tercer año consecutivo en el proyecto Technovation Girls, cuyo objetivo es acercar la tecnología a las chicas y jóvenes de 8 a 18 años, la idea es aumentar con esta iniciativa la presencia de mujeres en las carreras STEM."
 )
 parrafo("Debemos buscar un problema en nuestra comunidad que cumpla uno o varios de los Objetivos  de Desarrollo Sostenible 2030 de la ONU. Durante 12 semanas debemos trabajar para darle una solución a dicho problema y crear una App móvil o una Web App con dicha solución. ")
 
 parrafo("En este programa participan y compiten equipos de chicas de todo el mundo divididas en tres categorías, Beginner, Junior y Senior. ")
 
-parrafo("Las chicas aprendemos entre otras muchas cosas a programar, entrenar modelos de IA y a exponer nuestra idea y trabajo en público.")
+parrafo("Las chicas aprendemos entre otras muchas cosas a programar, entrenar modelos de IA, editar videos y a exponer nuestra idea y trabajo en público.")
 
 parrafo("Podéis conocer más sobre este programa a través del siguiente enlace:")
 # technovationchallenge.org
